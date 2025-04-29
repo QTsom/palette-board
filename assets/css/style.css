@@ -210,7 +210,7 @@
 .call-status-item:not(:first-of-type) {
     border-left: 5px solid #E1E1E1;
 }
-.call-status-item.disabled {
+.call-status-item.is-disabled {
     color: #BEBEBE;
 }
 .call-status-item span {
@@ -283,7 +283,7 @@
 .status-item:not(:last-of-type) {
     border-bottom: 1px solid #BEBEBE;
 }
-.status-item.disabled > * {
+.status-item.is-disabled > * {
     color: #BEBEBE;   
 }
 .status-item-name {
