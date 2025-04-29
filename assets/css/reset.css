@@ -1,0 +1,118 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+
+html,
+body {
+  touch-action: pan-y;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+
+  -webkit-text-size-adjust: none; /* 크롬, 사파리, 오페라 신버전 */
+  -ms-text-size-adjust: none; /* IE */
+  -moz-text-size-adjust: none; /* 파이어폭스 */
+  -o-text-size-adjust: none; /* 오페라 구버전 */
+  user-select: none;
+  background-color: #F5F5F5;
+  color: 222;
+}
+body {
+  overflow-x: hidden;
+}
+
+* {
+  font-family: "Pretendard", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  vertical-align: middle;
+  box-sizing: border-box;
+  line-height: normal;
+  vertical-align: baseline;
+  /* color: #333; */
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  font-size: 0;
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+  image-rendering: auto;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+em {
+  font-style: normal;
+}
+
+input {
+  -webkit-appearance: none;
+  -webkit-user-select: initial;
+  -khtml-user-select: initial;
+  -moz-user-select: initial;
+  -ms-user-select: initial;
+  user-select: initial;
+}
+input[type="text"],
+input[type="tel"],
+input[type="button"],
+input[type="password"],
+input[type="email"],
+input[type="search"],
+textarea,
+button {
+  appearance: none;
+  -moz-appearance: none;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+button,
+a {
+  color: #222;
+  cursor: pointer;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  color: #000;
+}
+
+select::-ms-expand {
+  display: none;
+}
