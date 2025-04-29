@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>palette</title>
+</head>
+<body>
+    <!-- TODO :: 응대율, 서비스레벨 관련 데이터 값 변경 원할 시 number-animation.js에서 변경하시면 됩니다 | 현재는 임시 랜덤 데이터 -->
+    <header class="header">
+        <div class="header-logo">
+            <img src="assets/img/header_logo.svg" alt="팔레트 로고">
+        </div>
+
+        <h1 class="header-title">카일이삼제스퍼 콜처리 현황</h1>
+
+        <span class="header-date">2025-02-04(화) 10:11:22</span>
+    </header>
+
+    <main class="content">
+        <div class="content-inner">
+            <!-- 좌측 영역 -->
+            <div class="left-area">
+                <!-- 좌측 상단 -->
+                <div class="percent-wrap">
+                    <div class="count-box">
+                        <span class="count-box-title">대기호</span>
+
+                        <strong class="count-box-number">14<small>건</small></strong>
+                    </div>
+
+                    <!-- 기준 :: 낮음 0~69% (is-low 클래스) | 보통 70~89% (is-normal 클래스) | 높음 90~100% (is-high 클래스 ) -->
+                    <div class="percent-box">
+                        <div class="percent-item is-normal">
+                            <div class="percent-item-title">
+                                <div class="gif-box"></div>
+                                <div class="percent-item-info">
+                                    <strong>응대율</strong>
+                                    <!-- span 내 변경된 퍼센트 숫자 또는 변경 없을 시 - 넣으시면 됩니다 -->
+                                     <!-- 상승 시 is-up 클래스 추가 | 하락 시 is-down 클래스 추가 | 변경 없을 시 클래스 x -->
+                                    <small class="percent-item-stat is-down"><span>14</span>%</small>
+                                </div>
+                            </div>
+
+                            <div class="number"></div>
+                        </div>
+                        <div class="percent-item is-high">
+                            <div class="percent-item-title">
+                                <div class="gif-box"></div>
+                                <div class="percent-item-info">
+                                    <strong>서비스레벨</strong>
+                                    <small class="percent-item-stat"><span>-</span>%</small>
+                                </div>
+                            </div>
+
+                            <div class="number"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 좌측 하단 통화 상태 -->
+                <ul class="call-status-list">
+                    <!-- 0이면 disabled 클래스 추가 -->
+                    <li class="call-status-item disabled">
+                        <span>통화중 (IN)</span>
+                        <strong>0</strong>
+                    </li>
+                    <li class="call-status-item">
+                        <span>통화중 (OUT)</span>
+                        <strong>14</strong>
+                    </li>
+                    <li class="call-status-item">
+                        <span>후처리</span>
+                        <strong>7</strong>
+                    </li>
+                </ul>
+            </div>
+    
+            <!-- 우측 영역 -->
+            <div class="right-area">
+                <!-- 콜처리 리스트 -->
+                <ul class="type-list">
+                    <li class="type-item">
+                        <div class="type-item-name">
+                            <div class="type-item-icon">
+                                <img src="assets/img/icon_inbound.svg" alt="인입호">
+                            </div>
+                            <span>인입호</span>
+                        </div>
+
+                        <strong class="type-item-counting">2</strong>
+                    </li>
+                    <li class="type-item">
+                        <div class="type-item-name">
+                            <div class="type-item-icon">
+                                <img src="assets/img/icon_head_phone.svg" alt="응대호">
+                            </div>
+                            <span>응대호</span>
+                        </div>
+
+                        <strong class="type-item-counting">2</strong>
+                    </li>
+                    <li class="type-item">
+                        <div class="type-item-name">
+                            <div class="type-item-icon">
+                                <img src="assets/img/icon_endcall.svg" alt="포기호">
+                            </div>
+                            <span>포기호</span>
+                        </div>
+
+                        <strong class="type-item-counting">0</strong>
+                    </li>
+                    <li class="type-item">
+                        <div class="type-item-name">
+                            <div class="type-item-icon">
+                                <img src="assets/img/icon_outbound.svg" alt="발신호">
+                            </div>
+                            <span>발신호</span>
+                        </div>
+
+                        <strong class="type-item-counting">197</strong>
+                    </li>
+                    <li class="type-item">
+                        <div class="type-item-name">
+                            <div class="type-item-icon">
+                                <img src="assets/img/icon_callback.svg" alt="콜백">
+                            </div>
+                            <span>콜백</span>
+                        </div>
+
+                        <strong class="type-item-counting">49</strong>
+                    </li>
+                </ul>
+
+                <!-- 상태 리스트 -->
+                <ul class="status-list">
+                    <!-- 0이면 disabled 클래스 추가 -->
+                    <li class="status-item disabled">
+                        <span class="status-item-name">수신대기</span>
+                        <span class="status-item-counting">0</span>
+                    </li>
+                    <li class="status-item">
+                        <span class="status-item-name">휴식</span>
+                        <span class="status-item-counting">3</span>
+                    </li>
+                    <li class="status-item">
+                        <span class="status-item-name">교육</span>
+                        <span class="status-item-counting">3</span>
+                    </li>
+                    <li class="status-item">
+                        <span class="status-item-name">식사</span>
+                        <span class="status-item-counting">3</span>
+                    </li>
+                    <li class="status-item">
+                        <span class="status-item-name">기타</span>
+                        <span class="status-item-counting">25</span>
+                    </li>
+                    <li class="status-item">
+                        <span class="status-item-name">로그인</span>
+                        <span class="status-item-counting">30</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/number-animation.js"></script>
+</body>
+</html
