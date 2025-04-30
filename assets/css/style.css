@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     height: calc(100vw*(100/1920));
-    padding: 0 calc(100vw*(56/1920));
+    padding: 0 calc(100vw*(50/1920));
     border-bottom: 1px solid #BEBEBE;
     background-color: #fff;
 }
