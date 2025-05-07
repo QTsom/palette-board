@@ -114,7 +114,7 @@ function initializeNumbers() {
         group.appendChild(digit3);
 
         // 여기에 초기값 데이터 설정 로직 추가
-        // 초기값은 숫자 슬롯 애니메이션으로 인해 반드시 3자리 숫자로 변환해 주셔야 합니다 (예: '001', '042', '100')
+        // 숫자 슬롯 애니메이션으로 인해 반드시 3자리 숫자로 변환해 주셔야 합니다 (예: '001', '042', '100')
         
         element.parentNode.replaceChild(group, element);
     });
