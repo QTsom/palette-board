@@ -106,6 +106,10 @@
     align-items: center;
     gap: calc(100vw*(40/1920));
 }
+.percent-item .gif-box {
+    width: calc(100vw*(104/1920));
+    height: calc(100vw*(104/1920));
+}
 .percent-item-info {
     display: flex;
     flex-direction: column;
