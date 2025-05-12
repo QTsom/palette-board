@@ -295,3 +295,16 @@
 .status-item-counting {
     font-size: calc(100vw*(48/1920));
 }
+
+.lottie-container {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.lottie-container.active {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: all 0.3s;
+}
