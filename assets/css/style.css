@@ -65,6 +65,7 @@
     display: flex;
     line-height: calc(100vw*(120/1920));
     font-size: calc(100vw*(133/1920));
+    gap: calc(100vw*(9/1920));
     font-weight: 800;
 }
 .percent-wrap .count-box-number small {
@@ -167,6 +168,7 @@
     font-size: calc(100vw*(60/1920));
     font-weight: 600;
     vertical-align: text-bottom;
+    margin-left: calc(100vw*(6/1920));
 }
 .number-list {
     position: absolute;
@@ -272,14 +274,15 @@
     background-color: #fff;
     border: 2px solid #BEBEBE;
     border-radius: calc(100vw*(20/1920));
+    display: flex;
+    flex-direction: column;
 }
-
 .status-item {
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: calc(100vw*(20/1920));
-    height: 16.7%;
     padding-left: calc(100vw*(40/1920));
     padding-right: calc(100vw*(40/1920));
 }
