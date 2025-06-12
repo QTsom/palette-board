@@ -53,7 +53,11 @@
                                 </div>
                             </div>
 
-                            <div class="number"></div>
+                            <!-- <div class="number"></div> -->
+                            <strong class="number-box">
+                                <span class="count-number">0</span>
+                                <small>%</small>
+                            </strong>
                         </div>
                         <div class="percent-item is-high">
                             <div class="percent-item-title">
@@ -71,7 +75,11 @@
                                 </div>
                             </div>
 
-                            <div class="number"></div>
+                            <!-- <div class="number"></div> -->
+                            <strong class="number-box">
+                                <span class="count-number">0</span>
+                                <small>%</small>
+                            </strong>
                         </div>
                     </div>
                 </div>
@@ -181,7 +189,168 @@
             </div>
         </div>
     </main>
-    <script src="assets/js/number-animation.js"></script>
+    
+    <main class="content is-loading">
+        <div class="loading-background">
+        </div>
+        <div class="content-inner">
+            <div class="left-area">
+                <div class="percent-wrap">
+                    <div class="count-box">
+                        <span class="count-box-title">대기호</span>
+
+                        <strong class="count-box-number">0<small>건</small></strong>
+                    </div>
+
+                    <div class="percent-box">
+                        <div class="percent-item is-high">
+                            <div class="percent-item-title">
+                                <div class="gif-box">
+                                    <!-- 낮을 때 이미지 -->
+                                    <div class="lottie-container active"style="width: 100%;">
+                                        <img src="assets/img/loading_emoji.svg" alt="로딩">
+                                    </div>
+                                </div>
+                                <div class="percent-item-info">
+                                    <strong>응대율</strong>
+                                    <small class="percent-item-stat is-up"><span>0</span>%</small>
+                                </div>
+                            </div>
+
+                            <strong class="number-box">
+                                0
+                                <small>%</small>
+                            </strong>
+                        </div>
+                        <div class="percent-item is-high">
+                            <div class="percent-item-title">
+                                <div class="gif-box">
+                                    <div class="lottie-container active" style="width: 100%;">
+                                        <img src="assets/img/loading_emoji.svg" alt="로딩">
+                                    </div>
+                                </div>
+                                <div class="percent-item-info">
+                                    <strong>서비스레벨</strong>
+                                    <small class="percent-item-stat is-up"><span>0</span>%</small>
+                                </div>
+                            </div>
+
+                            <strong class="number-box">
+                                0
+                                <small>%</small>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 좌측 하단 통화 상태 -->
+                <ul class="call-status-list">
+                    <!-- 0이면 is-disabled 클래스 추가 -->
+                    <li class="call-status-item is-disabled">
+                        <span>통화중 (IN)</span>
+                        <strong>0</strong>
+                    </li>
+                    <li class="call-status-item is-disabled">
+                        <span>통화중 (OUT)</span>
+                        <strong>0</strong>
+                    </li>
+                    <li class="call-status-item is-disabled">
+                        <span>후처리</span>
+                        <strong>0</strong>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 우측 영역 -->
+            <div class="right-area">
+                <!-- 콜처리 리스트 -->
+                <ul class="type-list">
+                    <li class="type-item">
+                        <div class="type-item-name">
+                            <div class="type-item-icon">
+                                <img src="assets/img/icon_inbound.svg" alt="인입호">
+                            </div>
+                            <span>인입호</span>
+                        </div>
+
+                        <strong class="type-item-counting">0</strong>
+                    </li>
+                    <li class="type-item">
+                        <div class="type-item-name">
+                            <div class="type-item-icon">
+                                <img src="assets/img/icon_head_phone.svg" alt="응대호">
+                            </div>
+                            <span>응대호</span>
+                        </div>
+
+                        <strong class="type-item-counting">0</strong>
+                    </li>
+                    <li class="type-item">
+                        <div class="type-item-name">
+                            <div class="type-item-icon">
+                                <img src="assets/img/icon_endcall.svg" alt="포기호">
+                            </div>
+                            <span>포기호</span>
+                        </div>
+
+                        <strong class="type-item-counting">0</strong>
+                    </li>
+                    <li class="type-item">
+                        <div class="type-item-name">
+                            <div class="type-item-icon">
+                                <img src="assets/img/icon_outbound.svg" alt="발신호">
+                            </div>
+                            <span>발신호</span>
+                        </div>
+
+                        <strong class="type-item-counting">0</strong>
+                    </li>
+                    <li class="type-item">
+                        <div class="type-item-name">
+                            <div class="type-item-icon">
+                                <img src="assets/img/icon_callback.svg" alt="콜백">
+                            </div>
+                            <span>콜백</span>
+                        </div>
+
+                        <strong class="type-item-counting">0</strong>
+                    </li>
+                </ul>
+
+                <!-- 상태 리스트 -->
+                <ul class="status-list">
+                    <!-- 0이면 is-disabled 클래스 추가 -->
+                    <li class="status-item is-disabled">
+                        <span class="status-item-name">수신대기</span>
+                        <span class="status-item-counting">0</span>
+                    </li>
+                    <li class="status-item is-disabled">
+                        <span class="status-item-name">휴식</span>
+                        <span class="status-item-counting">0</span>
+                    </li>
+                    <li class="status-item is-disabled">
+                        <span class="status-item-name">교육</span>
+                        <span class="status-item-counting">0</span>
+                    </li>
+                    <li class="status-item is-disabled">
+                        <span class="status-item-name">식사</span>
+                        <span class="status-item-counting">0</span>
+                    </li>
+                    <li class="status-item is-disabled">
+                        <span class="status-item-name">기타</span>
+                        <span class="status-item-counting">0</span>
+                    </li>
+                    <li class="status-item is-disabled">
+                        <span class="status-item-name">로그인</span>
+                        <span class="status-item-counting">0</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    <!-- <script src="assets/js/number-animation.js"></script> -->
+    <script src="assets/js/number-animation-new.js"></script>
     <script src="assets/js/lottie-animation.js"></script>
 </body>
 </html>
