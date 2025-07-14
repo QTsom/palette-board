@@ -133,8 +133,10 @@
     gap: calc(100vw*(40/1920));
 }
 .percent-item .gif-box {
-    width: calc(100vw*(104/1920));
-    height: calc(100vw*(104/1920));
+    width: calc(100vw*(103/1920));
+    height: calc(100vw*(103/1920));
+    border-radius: 50%;
+    overflow: hidden;
 }
 .percent-item-info {
     display: flex;
